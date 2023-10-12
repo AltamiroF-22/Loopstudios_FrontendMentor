@@ -1,0 +1,98 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../public//images/desktop/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.header-content {
+  border: solid 3px var(--white--color);
+  padding: 2rem;
+  margin-left: 100px;
+  width: 500px;
+}
+.header-content h2 {
+  color: var(--white--color);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+  .header-content h2 {
+    font-size: 2.5rem;
+  }
+  .header-content {
+    width: 80%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header-content h2 {
+    font-size: 2rem;
+  }
+  .header-content {
+    width: 80%;
+    margin-left: -10px;
+  }
+}
+
+/* --------------------- MAIN ----------------------------- */
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-home-1 {
+  width: 85%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.text-main {
+  max-width: 500px;
+  background-color: var(--white--color);
+  position: absolute;
+  bottom: 0;
+  left: 27rem;
+  padding: 2rem 3rem;
+}
+.text-main h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+.text-main p {
+  color: #333;
+  font-family: "Alata", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    width: 100%;
+  }
+  .main-home-1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .text-main {
+    /* background-color: red; */
+    margin: 0 auto;
+    padding: 2rem;
+    position: initial;
+  }
+  .foto-main img {
+    width: 350px;
+  }
+}
